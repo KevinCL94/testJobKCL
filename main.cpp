@@ -86,25 +86,25 @@ int main(int argc, char *argv[])
 {
 	bool inverse = false;
 	int numLines = 0;
-	if(argc < 2){
-		cout << "Debe introducir el numero de lineas como parametro" << endl;
+	if(argc < 3 || strcmp(argv[1],"-l")){
+		cout << "Debe introducir el numero de lineas como segundo parametro y como primero '-l'" << endl;
 		
 		return 0;
-	} else if (argc == 2) {
-		if(!isNum(argv[1])){
+	} else if (argc == 3) {
+		if(!isNum(argv[2])){
 			cout << "El primer parametro debe ser un numero" << endl;
 			return 0;
 		} else{
-			numLines = atoi(argv[1]);
+			numLines = atoi(argv[2]);
 		}
 	} else {
-		if(!isNum(argv[1])){
+		if(!isNum(argv[2])){
 			cout << "El primer parametro debe ser un numero" << endl;
 			return 0;
 		} else{
-			numLines = atoi(argv[1]);
+			numLines = atoi(argv[2]);
 		}
-		if(!strcmp(argv[2],"-i")){
+		if(!strcmp(argv[3],"-i")){
 			inverse = true;
 		}else{
 			cout << "Para invertir el cohete el tercer parametro debe ser '-i' " << endl;
