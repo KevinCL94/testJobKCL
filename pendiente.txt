@@ -1,0 +1,3 @@
+Configurar CMake para que funcione el compilador sin necesidad de generar fichero CMakeCache previamente desde CMake-gui.
+Comprobar por que no funciona la ejecución de make, solamente muestra informacion del sistema, la variable de entorno a la carpeta C:\MinGW\msys\1.0\bin, donde se 
+encuentra make, esta fijada en PATH, mingw32-make si funciona, ubicado en carpeta C:\MinGW\bin.
