@@ -1,3 +1,5 @@
-Configurar CMake para que funcione el compilador sin necesidad de generar fichero CMakeCache previamente desde CMake-gui.
-Comprobar por que no funciona la ejecución de make, solamente muestra informacion del sistema, la variable de entorno a la carpeta C:\MinGW\msys\1.0\bin, donde se 
-encuentra make, esta fijada en PATH, mingw32-make si funciona, ubicado en carpeta C:\MinGW\bin.
+[llamada make OK] Como esperaba, solo habia que instalar Make for Windows y añadirlo como variable de entorno, el que venía en el paquete MinGW no funcionaba.
+
+Configurar mi CMake para que tome correctamente el generador minGW por defecto, actualmente esta NMake y no he conseguido cambiarlo mediante 
+el comando cmake -G "MinGW Makefiles", ni se encuentran las variabales de entorno, por lo que requiere generar el fichero CMakeCache desde CMake-gui
+para indicarle el compilador a utilizar y una vez generado, si que permite compilar desde terminal.
