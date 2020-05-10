@@ -1,0 +1,5 @@
+[Parece que no es posible cambiar generador por defecto:
+"https://stackoverflow.com/questions/59095842/cmake-mingw-compilation-on-windows-without-needing-the-g-mingw-makefiles-f"]
+No es necesario generar el fichero CMakeCache desde CMake-gui para indicar al compilador, si se hace mediante la linea de comandos 
+la llamada a cmake -G "MinGW Makefiles", el problema de esa llamada es que no se fija por defecto, siendo necesario antes de 
+compilar el programa por primera vez.
