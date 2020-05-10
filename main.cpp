@@ -31,14 +31,14 @@ void printSpike(int n_lines)					//Imprime el caracter correspondiente al pico
 	cout << "|" << endl;
 }
 
-void printFeet(int n_lines)
+void printFeet(int n_lines)									//Funcion para imprimir pie del cohete
 {
-	int end_line = 2*n_lines-1;
-	for(int i=0;i < end_line; i++){
-		if(i == 0 || i == end_line/2 || i == end_line-1){
-			cout << "X";
-		}else{
-			cout << " ";
+	int end_line = 2*n_lines-1;								//Recorre el doble de la posiciones 
+	for(int i=0;i < end_line; i++){							//que el numero de linea en que nos encontramos menos una
+		if(i == 0 || i == end_line/2 || i == end_line-1){	//Cuando pasa por la primera posicion, la ultima o la intermedia
+			cout << "X";									//el programa imprimira una X
+		}else{												//Si no se esta en una de estas tres posiciones
+			cout << " ";									//Se imprime un espacio para avanzar la posicion en la linea
 		}
 	}
 	cout << endl;
